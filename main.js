@@ -5,6 +5,8 @@
 //4. a timer will start when game begins and stop when game ends
 //5. reset button will restart the game and timer
 // cards array holds all cards
+
+// cards array holds all cards
 let card = document.getElementsByClassName("card");
 let cards = [...card];
 console.log(cards);
@@ -143,96 +145,4 @@ function enable() {
       matchedCard[i].classList.add("disabled");
     }
   });
-}
-
-// @description count player's moves
-function moveCounter() {
-  moves++;
-  counter.innerHTML = moves;
-  //start timer on first click
-  if (moves == 1) {
-    second = 0;
-    minute = 0;
-    hour = 0;
-    startTimer();
-  }
-  // setting rates based on moves
-  if (moves > 8 && moves < 12) {
-    for (i = 0; i < 3; i++) {
-      if (i > 1) {
-        stars[i].style.visibility = "collapse";
-      }
-    }
-  } else if (moves > 13) {
-    for (i = 0; i < 3; i++) {
-      if (i > 0) {
-        stars[i].style.visibility = "collapse";
-      }
-    }
-  }
-}
-
-// @description game timer
-var second = 0,
-  minute = 0;
-hour = 0;
-var timer = document.querySelector(".timer");
-var interval;
-function startTimer() {
-  interval = setInterval(function () {
-    timer.innerHTML = minute + "mins " + second + "secs";
-    second++;
-    if (second == 60) {
-      minute++;
-      second = 0;
-    }
-    if (minute == 60) {
-      hour++;
-      minute = 0;
-    }
-  }, 1000);
-}
-
-// @description congratulations when all cards match, show modal and moves, time and rating
-function congratulations() {
-  if (matchedCard.length == 16) {
-    clearInterval(interval);
-    finalTime = timer.innerHTML;
-
-    // show congratulations modal
-    modal.classList.add("show");
-
-    // declare star rating variable
-    var starRating = document.querySelector(".stars").innerHTML;
-
-    //showing move, rating, time on modal
-    document.getElementById("finalMove").innerHTML = moves;
-    document.getElementById("starRating").innerHTML = starRating;
-    document.getElementById("totalTime").innerHTML = finalTime;
-
-    //closeicon on modal
-    closeModal();
-  }
-}
-
-// @description close icon on modal
-function closeModal() {
-  closeicon.addEventListener("click", function (e) {
-    modal.classList.remove("show");
-    startGame();
-  });
-}
-
-// @desciption for user to play Again
-function playAgain() {
-  modal.classList.remove("show");
-  startGame();
-}
-
-// loop to add event listeners to each card
-for (var i = 0; i < cards.length; i++) {
-  card = cards[i];
-  card.addEventListener("click", displayCard);
-  card.addEventListener("click", cardOpen);
-  card.addEventListener("click", congratulations);
 }
