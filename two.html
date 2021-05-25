@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Esmee's Memory Game</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker" >
+    <link rel="stylesheet" href="two.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Memory Game</h1>
+        </header>
+
+        <section class="score-panel">
+        
+
+        	<span class="moves">0</span> Move(s)
+
+            <div class="timer">
+            </div>
+
+            <div class="restart" onclick=startGame()>
+        		<i class="fa fa-repeat"></i>
+        	</div>
+        </section>
+
+        <ul class="deck" id="card-deck">
+
+            <li class="card" type="espresso">
+                <img src="st,small,507x507-pad,600x600,f8f8f8.jpg" alt="image">
+               
+            </li>
+            <li class="card" type="espresso">
+                <img src="st,small,507x507-pad,600x600,f8f8f8.jpg" alt="image"> 
+            </li>
+            <li class="card" type="pstar">
+                <img src="de-winton-paper-co-cocktail-illustration-pornstar-martini.jpg" alt="image">
+            </li>
+            <li class="card match" type="marg">
+                <img src="download.jpg" alt="image">
+            </li>
+            <li class="card" type="long" >
+                <img src="long-island-iced-tea-cocktail-gin-vodka-rum-png-favpng-QjQhJHhYKFXjuV9N4cGF7TcuA.jpg" alt="image">
+            </li>
+             <li class="card" type="cosmo">
+                <img src="310aa8d16362cb394949af07d761c2f2 (1).jpg" alt="image">
+            </li>
+            <li class="card match" type="marg">
+                <img src="download.jpg" alt="image">
+            </li>
+            <li class="card" type="pina" >
+                <img src="532-5328135_the-ultimate-guide-to-pina-colada-clipart-png.png" alt="image">
+            </li>
+             <li class="card" type="beach" >
+                    <img src="imgbin-cocktail-sex-on-the-beach-tequila-sunrise-juice-blue-lagoon-cartoon-food-and-drink-lemonade-cocktail-NSgRGZvJ98TXkS5TC1Kpi5Mt3.jpg" alt="image">
+            </li>
+
+            <li class="card" type="strawberry" >
+                <img src="alcohol-cocktail-daiquiri-strawberry-decor-watercolor-hand-drawn-illustration-isolated-white-background-135180861.jpg" alt="image">
+            </li>
+            <li class="card" type="pina" >
+                <img src="532-5328135_the-ultimate-guide-to-pina-colada-clipart-png.png" alt="image">
+                
+            </li>
+            <li 
+                class="card" type="strawberry" >
+                    <img src="alcohol-cocktail-daiquiri-strawberry-decor-watercolor-hand-drawn-illustration-isolated-white-background-135180861.jpg" alt="image">
+            </li>
+            <li class="card" type="long" >
+                <img src="long-island-iced-tea-cocktail-gin-vodka-rum-png-favpng-QjQhJHhYKFXjuV9N4cGF7TcuA.jpg" alt="image">
+            </li>
+            <li class="card" type="beach" >
+                <img src="imgbin-cocktail-sex-on-the-beach-tequila-sunrise-juice-blue-lagoon-cartoon-food-and-drink-lemonade-cocktail-NSgRGZvJ98TXkS5TC1Kpi5Mt3.jpg" alt="image">
+            </li>
+            <li class="card" type="pstar">
+                <img src="de-winton-paper-co-cocktail-illustration-pornstar-martini.jpg" alt="image">
+            </li>
+            <li class="card" type="cosmo">
+            <img src="310aa8d16362cb394949af07d761c2f2 (1).jpg" alt="image">
+            </li>
+        </ul>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Congratulations!</h2>
+                <a class="close" href=# >×</a>
+                <div class="content-1">
+                    Congratulations you've won! 
+                </div>
+            
+        </div>
+
+    </div>
+    <script src="./two.js"></script>
+</body>
+</html>
+ 
