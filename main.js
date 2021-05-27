@@ -6,6 +6,12 @@
 //5. reset button will restart the game and timer
 // cards array holds all cards
 
+// THINGS I NEED TO WORK ON:
+// 1. GET CONFETTI WORKING
+// 2. STYLE POP UP MODAL BETTER
+// 3. FIND A BETTER FONT
+// 4. CHANGE PIC OF ONE CARD
+
 // CARDS ARRAY -> ALL CARDS
 let card = document.getElementsByClassName("card");
 let cards = [...card];
