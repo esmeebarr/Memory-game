@@ -223,8 +223,7 @@ content-1 {
   border-style: dotted;
 }
 
-/****** Media queries
-***************************/
+//MEDIA QUERIES
 
 @media (max-width: 320px) {
   .deck {
@@ -237,7 +236,7 @@ content-1 {
   }
 }
 
-/* animations */
+//ANMATIONS
 @keyframes flipInY {
   from {
     transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
@@ -308,8 +307,7 @@ content-1 {
   }
 }
 
-/* For Tablets and larger screens
-****************/
+//MEDIA QUERIES -> TABLETS + LARGER SCREENS
 
 @media (min-width: 768px) {
   .container {

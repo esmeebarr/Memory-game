@@ -1,0 +1,24 @@
+{
+  "name": "memory-game",
+  "version": "1.0.0",
+  "main": "main.js",
+  "dependencies": {
+    "canvas-confetti": "^1.4.0",
+    "confetti-js": "0.0.18"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esmeebarr/Memory-game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/esmeebarr/Memory-game/issues"
+  },
+  "homepage": "https://github.com/esmeebarr/Memory-game#readme",
+  "description": ""
+}

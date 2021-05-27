@@ -189,6 +189,16 @@ function congratulations() {
   }
 }
 
+// ADDING CONFETTI
+// var confettiSettings = { target: "my-canvas" };
+// var confetti = new ConfettiGenerator(confettiSettings);
+// confetti.render();
+
+// var confettiElement = document.getElementById("my-canvas");
+// var confettiSettings = { target: confettiElement };
+// var confetti = new ConfettiGenerator(confettiSettings);
+// confetti.render();
+
 // EXIT POP UP
 function closeModal() {
   closeicon.addEventListener("click", function (e) {

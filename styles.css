@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 *,
@@ -216,8 +218,6 @@ content-1 {
   border-style: dotted;
 }
 
-/****** Media queries
-***************************/
 @media (max-width: 320px) {
   .deck {
     width: 85%;
@@ -228,7 +228,6 @@ content-1 {
     width: 4.7rem;
   }
 }
-/* animations */
 @keyframes flipInY {
   from {
     transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
@@ -284,8 +283,6 @@ content-1 {
     transform: scale3d(1, 1, 1);
   }
 }
-/* For Tablets and larger screens
-****************/
 @media (min-width: 768px) {
   .container {
     font-size: 22px;
