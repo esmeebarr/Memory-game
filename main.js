@@ -11,7 +11,7 @@
 // 2. STYLE POP UP MODAL BETTER
 // 3. FIND A BETTER FONT
 // 4. CHANGE PIC OF ONE CARD
-// 5. MUSIC USING HOWLER?
+// 5. ADD MUSIC?
 
 // CARDS ARRAY -> ALL CARDS
 let card = document.getElementsByClassName("card");
