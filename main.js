@@ -4,13 +4,14 @@
 //3. game will show number of moves the player makes
 //4. a timer will start when game begins and stop when game ends
 //5. reset button will restart the game and timer
-// cards array holds all cards
 
 // THINGS I NEED TO WORK ON:
 // 1. GET CONFETTI WORKING
 // 2. STYLE POP UP CONGRATULATIONS MODAL BETTER
 // 3. FIND A BETTER FONT
 // 4. ADD MUSIC?
+// 5. use arrow function syntax
+// 6. change vars to const or let
 
 // CARDS ARRAY -> ALL CARDS
 let card = document.getElementsByClassName("card");
@@ -83,7 +84,7 @@ function startGame() {
   clearInterval(interval);
 }
 
-// OPEN TOGGLE AND DISPLAY CARD CLASSES
+// DISPLAY CARD CLASSES
 var displayCard = function () {
   this.classList.toggle("open");
   this.classList.toggle("show");
