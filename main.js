@@ -1,7 +1,7 @@
 //WHAT MY GAME WILL NEED TO DO:
 //1. cards will be shuffled when game reloads
 //2. game will react correctly to matched or unmatched cards
-//3. game will show number f moves the player makes
+//3. game will show number of moves the player makes
 //4. a timer will start when game begins and stop when game ends
 //5. reset button will restart the game and timer
 // cards array holds all cards
@@ -11,6 +11,7 @@
 // 2. STYLE POP UP MODAL BETTER
 // 3. FIND A BETTER FONT
 // 4. CHANGE PIC OF ONE CARD
+// 5. MUSIC USING HOWLER?
 
 // CARDS ARRAY -> ALL CARDS
 let card = document.getElementsByClassName("card");
